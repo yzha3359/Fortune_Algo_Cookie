@@ -299,9 +299,3 @@ This rolling-window technique becomes essential in time series analysis, enablin
 * Creates the testing data (`Xn_test` and `yn_test`) for this window and appends these testing dataframes to the respective lists.
 
 * After the loop concludes, the code concatenates all the stored training and testing dataframes into the final training and testing sets.
-
-
-## Installation
-
-
-pip3 install backtesting
