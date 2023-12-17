@@ -207,7 +207,7 @@ The RSI can do more than point to overbought and oversold securities. It can als
 
 After optimisation, the upper bound, lower bound, and window size are set to ***60***, ***40***, and ***14*** days respectively. 
 
-The trading signals are initialised to a neutral position and then start tracking trade signals and buy prices. The RSI thresholds (`rsi_lower_bound`` and `rsi_upper_bound``) guide the buy and sell decisions: when the RSI falls below the lower threshold and no buy signal is active, it triggers a buy signal and records the buy price. Conversely, if the RSI rises above the upper threshold after a buy signal, it triggers a sell signal. 
+The trading signals are initialised to a neutral position and then start tracking trade signals and buy prices. The RSI thresholds (`rsi_lower_bound` and `rsi_upper_bound`) guide the buy and sell decisions: when the RSI falls below the lower threshold and no buy signal is active, it triggers a buy signal and records the buy price. Conversely, if the RSI rises above the upper threshold after a buy signal, it triggers a sell signal. 
 
 Additionally, a stop-loss mechanism is in place: if the stock price falls below a stop-loss percentage (`here 5%`) from the buy price, it triggers a sell signal to limit potential losses. The algorithm ensures only one entry and exit point per trade cycle to effectively manage trade signals based on RSI values.
 
